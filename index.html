@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keyword" content="家装||活动||优惠||11月23日||盛大开幕">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <title>家装活动首页</title>
+  </head>
+  <body>
+    <header class="row">
+      <div class="col-xs-12">
+        <img src="images/post.jpg" alt="" />
+      </div>
+    </header>
+    <section class="apply-head">
+      <div class="apply-form">
+        <h1 class="apply-title">
+          <span class="title"></span>
+        </h1>
+        <input type="text" id='inptPhone' class="form-control" name="电话号码" placeholder="请输入手机号码" >
+        <button type="button" class="btn btn-danger btn-block" id="clickApply" onclick="apply()">点击报名</button>
+        <p class="time">
+          <i class="time-icon"></i>
+          2016年11月26日 (星期六) 10:00-2016年11月27日 (星期日) 18:00
+        </p>
+        <p class="place">
+          <i class="place-icon"></i>
+          海淀区羊坊店路18号光耀东方广场齐家互联网家装体验馆(北京西站北广场对面）
+        </p>
+      </div>
+    </section>
+    <div class="main-content">
+      <section class="main-content-h">
+        <h2 class="">活动亮点</h2>
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="images/progress.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <aside class="foot-fixed">
+      <ul class="foot-fixed-con">
+        <li class="foot-fixed-con-list checked">
+          <span>报名</span>
+        </li>
+        <li class="foot-fixed-con-list">
+          <span>活动攻略</span>
+        </li>
+        <li class="foot-fixed-con-list">
+          <span>特惠推荐</span>
+        </li>
+        <li class="foot-fixed-con-list">
+          <span>装修顾问</span>
+        </li>
+        <li class="foot-fixed-con-list">
+          <span>在线客服</span>
+        </li>
+      </ul>
+    </aside>
+    <div class="mask-dialog" id="mask-dialog">
+      请输入手机号
+    </div>
+  </body>
+  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var mask = document.getElementById('mask-dialog');
+    var apply = function (){
+      var oInpt = document.getElementById('inptPhone');
+      if(oInpt.value == ""){
+        mask.style.visibility = "visible";
+        setInterval(function(){
+          mask.style.visibility = "hidden";
+        },2000)
+      }
+    }
+    window.onload = function(){
+      var maskWidth = mask.clientWidth;
+      var bdWidth = document.body.clientWidth;
+      mask.style.left = (bdWidth - maskWidth)/2 +"px";
+    }
+  </script>
+</html>

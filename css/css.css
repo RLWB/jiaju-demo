@@ -1,0 +1,133 @@
+h1,h2,h3,h4,h5,h6,*{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+}
+html,header{
+  overflow-x: hidden;
+}
+body{
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.apply-form{
+  padding: 0 10%;
+  text-align: center;
+}
+.apply-title{
+  padding: .04rem 0;
+  margin: 15px 0 5px 0;
+  text-align: center;
+}
+.title{
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  background: url(../images/title.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.apply-form .form-control{
+  background-color: #ffeef1;
+  margin: 10px 0;
+}
+.time-icon{
+  width: 10px;
+  height: 12px;
+  display: inline-block;
+  background: url(../images/my-icons.png) 0px -13px no-repeat;
+  background-size: 100%;
+}
+.time{
+  margin-top: 10px;
+}
+.time,.place{
+  text-align: left;
+}
+.place-icon{
+  width: 10px;
+  height: 12px;
+  display: inline-block;
+  background: url(../images/my-icons.png) 0px 0px no-repeat;
+  background-size: 100%;
+}
+.foot-fixed{
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin-right: 0 auto;
+  z-index: 2;
+}
+.foot-fixed-con{
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+.foot-fixed-con-list{
+  float: left;
+  padding: 10px 0;
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+.foot-fixed-con-list span{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: orange;
+  border-right: 1px solid orange;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+.foot-fixed-con-list:nth-child(5) span{
+  border-right: 0px solid orange;
+}
+.checked,.checked span{
+  background-color: orange;
+  color: #fff;
+}
+.mask-dialog{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  max-width: 80%;
+  padding: 5px 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .85);
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  visibility: hidden;
+}
+.main-content-h h2{
+  background-color: #ffeef1;
+  padding: 10px 20px;
+  position: relative;
+}
+.main-content-h h2:before{
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 10px;
+  width: 2px;
+  background: #f24;
+}
+.main-content{
+  margin-bottom: 40px;
+}

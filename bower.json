@@ -1,0 +1,21 @@
+{
+  "name": "jiaju",
+  "homepage": "https://github.com/RLWB/js-module",
+  "authors": [
+    "rlwb <rlwb1017669154@gmail.com>"
+  ],
+  "description": "jiaju-demo",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.0.6"
+  }
+}
